@@ -15,6 +15,7 @@ const LoginSide = ({ sideBar, setSideBar }: Iprob) => {
     function log() {
         return (
             <>
+            <h1>h</h1>
                 <div className="login">
                     <div className="text">
                         <p className='close' onClick={() => {
