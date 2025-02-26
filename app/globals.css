@@ -13,7 +13,7 @@
   }
 }
 html {
-  font-size: 20px;
+  font-size: 16px;
 }
 html,
 body {
@@ -76,5 +76,40 @@ p {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+/* Mobile */
+@media (max-width: 400px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 401px) and (max-width: 510px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (min-width: 511px) and (max-width: 767px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+/* Small Screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 15px;
+  }
+}
+/* Medium Screens */
+@media (min-width: 992px) and (max-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  html {
+    font-size: 16px;
   }
 }
