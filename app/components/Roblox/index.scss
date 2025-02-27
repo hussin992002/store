@@ -1,0 +1,217 @@
+.roblox {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    .text {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        border-right: 2px solid var(--main-cr);
+        border-bottom: 2px solid var(--main-cr);
+        box-shadow: 1 1 5;
+        border-radius: 10px;
+        padding: 1rem;
+
+        h1 {
+            text-align: start;
+            letter-spacing: .7rem;
+        }
+
+        p {
+            text-align: start;
+            letter-spacing: .2rem;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        p::before {
+            content: '';
+            position: absolute;
+            width: 10;
+            height: 10;
+            background-color: var(--main-cr);
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .order {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+
+        .orderText {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            h1 {
+                letter-spacing: .7rem;
+                border-bottom: 1px solid var(--main-cr);
+                border-right: 1px solid var(--main-cr);
+                border-radius: 10px;
+                padding: .5rem;
+                width: max-content;
+                box-shadow: 1 1 5;
+            }
+
+            .textBox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 3rem;
+
+                h2 {
+                    letter-spacing: .7rem;
+                    border-bottom: 1px solid var(--main-cr);
+                    border-right: 1px solid var(--main-cr);
+                    border-radius: 10px;
+                    padding: .5rem;
+                    width: max-content;
+                    box-shadow: 1 1 5;
+                    cursor: pointer;
+                }
+
+                h2:hover {
+                    background-color: var(--main-cr);
+                    color: var(--black-cr);
+                    border: 2px solid var(--white-cr);
+                }
+            }
+        }
+
+
+        form {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+
+            .box {
+                width: 100%;
+                height: max-content;
+                border-right: 1px solid var(--main-cr);
+                border-bottom: 1px solid var(--main-cr);
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: .5rem;
+
+                label {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+
+                input {
+                    border: 2px solid var(--main-cr);
+                    background-color: transparent;
+                    color: var(--white-cr);
+                    height: 1.5rem;
+                    min-height: 30px;
+                    padding: .5rem;
+                }
+
+                textarea.T {
+                    border: 2px solid var(--main-cr);
+                    background-color: transparent;
+                    color: var(--white-cr);
+                    height: 2rem;
+                    min-height: 50px;
+                    padding: .5rem;
+                    width: 100%;
+                }
+            }
+
+            .whenbox {
+                width: 100%;
+                height: max-content;
+                border-right: 1px solid var(--main-cr);
+                border-bottom: 1px solid var(--main-cr);
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                h3 {
+                    letter-spacing: .5rem;
+                    border-bottom: 1px solid var(--main-cr);
+                    border-right: 1px solid var(--main-cr);
+                    border-radius: 10px;
+                    padding: .5rem;
+                }
+
+                .bigBox {
+                    width: 100%;
+                    height: max-content;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding-bottom: .5rem;
+
+                    .box1 {
+                        display: flex;
+                        gap: .5rem;
+
+                        label {
+                            font-size: 1.2rem;
+                            cursor: pointer;
+                            padding: .5rem;
+                            border-bottom: 1px solid var(--main-cr);
+                            border-right: 1px solid var(--main-cr);
+                            border-radius: 10px;
+
+                        }
+
+                        input {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            input.send {
+                justify-self: center;
+                align-self: center;
+                width: 50%;
+                max-width: 200px;
+                height: 1.7rem;
+                border: 1px solid var(--main-cr);
+                background-color: transparent;
+                color: var(--white-cr);
+                text-align: center;
+                cursor: pointer;
+                font-weight: 550;
+            }
+
+            input.send:hover {
+                background-color: var(--main-cr);
+                color: var(--black-cr);
+                border: 1px solid var(--white-cr);
+            }
+        }
+
+        .clicked {
+            background-color: var(--main-cr);
+            color: var(--black-cr);
+            border: 1px solid var(--white-cr);
+        }
+    }
+}
