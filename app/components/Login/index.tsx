@@ -16,7 +16,9 @@ const LoginSide = ({ sideBar, setSideBar }: Iprob) => {
         return (
             <>
                 <div className="login">
-                    <div className="x">
+                    <div onClick={() => {
+                        setSideBar(false)
+                    }} className="x">
                         <p className='close' onClick={() => {
                             setSideBar(false)
                         }}>X</p>

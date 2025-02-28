@@ -33,7 +33,7 @@ const NavBar = ({ setcontent, setSideBar, sideBar }: Ibroop) => {
             <div className="login" onClick={() => {
                 setSideBar(!sideBar)
             }}>
-                <Image src={loginsvg} alt='loading' />
+                <Image className='img' src={loginsvg} alt='loading' />
             </div>
         </div>
     )
