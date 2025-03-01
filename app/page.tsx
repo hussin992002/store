@@ -7,17 +7,18 @@ import Login from "./components/Login";
 import Roblox from "./components/Roblox";
 import Footer from "./components/Footer";
 import Message from "./components/Message";
+import Order from "./components/Ordars";
 
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false)
   const [content, setcontent] = useState('home')
   const [message, setMessage] = useState(false)
-  const [order, setOrder] = useState(false)
+  const [order, setOrder] = useState(true)
 
 
   function whatin() {
-    if (content === 'home' && !message) {
+    if (content === 'home' && !message && !order) {
       return (
         <>
           <NavBar content={content} setcontent={setcontent} setSideBar={setSideBar} sideBar={sideBar} />
@@ -28,7 +29,7 @@ export default function Home() {
         </>
       )
     }
-    if (content === 'about' && !message) {
+    if (content === 'about' && !message && !order) {
       return (
         <>
           <NavBar content={content} setcontent={setcontent} setSideBar={setSideBar} sideBar={sideBar} />
@@ -39,7 +40,7 @@ export default function Home() {
         </>
       )
     }
-    if (content === 'roblox' && !message) {
+    if (content === 'roblox' && !message && !order) {
       return (
         <>
           <NavBar content={content} setcontent={setcontent} setSideBar={setSideBar} sideBar={sideBar} />
@@ -55,9 +56,13 @@ export default function Home() {
         <Message message={message} setMessage={setMessage} />
       )
     }
+    if(order){
+      return(
+        <Order setOrder={setOrder}/>
+      )
+    }
   }
   return (
     whatin()
-    
   )
 }

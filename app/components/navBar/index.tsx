@@ -21,8 +21,9 @@ const NavBar = ({ setcontent, setSideBar, sideBar }: Ibroop) => {
                     <p onClick={() => {
                         setlist(!listvisaple)
                     }}>Games<Image src={arrow} alt='loading' /></p>
-                    <div className={`list ${listvisaple ? 'active' : ''}`}>
+                    <div className={`list ${listvisaple ? '' : 'hidden'}`}>
                         <a onClick={()=>{
+                            setlist(false)
                             setcontent('roblox')
                         }}>Roblox</a>
                     </div>
